@@ -8,16 +8,18 @@ function returnPhrase(number) {
 	}
 	console.log(outputArray);
 
+	function 
+	var outputResult = '';
+
 	for (; i <= outputArray.length; i++) {
-		var outputResult = '';
-		if (number.toString().includes(3)) {
-			outputResult += resultArray.push('I\'m sorry Dave. I\'m afraid I can\'t do that.');
-		} else if (number.toString().includes(2)) {
-			outputResult += resultArray.push('Boop!');
-		} else if (number.toString().includes(1)) {
-			outputResult += resultArray.push('Beep!');
+		if(number.toString().includes(3)) {
+			resultArray.push('I\'m sorry Dave. I\'m afraid I can\'t do that.');
+		} else if(number.toString().includes(2)) {
+			resultArray.push('Boop!');
+		} else if(number.toString().includes(1)) {
+			resultArray.push('Beep!');
 		} else {
-			outputResult += resultArray.push(number);
+			resultArray.push(number);
 		}
 		console.log('result array', resultArray);
 		console.log('result', outputResult);
