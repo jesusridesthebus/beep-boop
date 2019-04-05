@@ -1,25 +1,23 @@
 function returnPhrase(number) {
 	var outputArray = [];
 	var resultArray = [];
-	var i = 0;
 
-	for (; i <= number; i++) {
+	for (i = 0; i <= number; i++) {
 		outputArray.push(i);
 	}
 	console.log(outputArray);
 
-	function 
 	var outputResult = '';
 
-	for (; i <= outputArray.length; i++) {
-		if(number.toString().includes(3)) {
+	for (i = 0; i < outputArray.length; i++) {
+		if(i.toString().includes('3')) {
 			resultArray.push('I\'m sorry Dave. I\'m afraid I can\'t do that.');
-		} else if(number.toString().includes(2)) {
+		} else if(i.toString().includes('2')) {
 			resultArray.push('Boop!');
-		} else if(number.toString().includes(1)) {
+		} else if(i.toString().includes('1')) {
 			resultArray.push('Beep!');
 		} else {
-			resultArray.push(number);
+			resultArray.push(i);
 		}
 		console.log('result array', resultArray);
 		console.log('result', outputResult);
