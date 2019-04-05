@@ -1,13 +1,12 @@
 function returnPhrase(number) {
 	var outputArray = [];
 	var resultArray = [];
+	var i = 0;
 
 	for (i = 0; i <= number; i++) {
 		outputArray.push(i);
 	}
 	console.log(outputArray);
-
-	var outputResult = '';
 
 	for (i = 0; i < outputArray.length; i++) {
 		if(i.toString().includes('3')) {
@@ -19,9 +18,12 @@ function returnPhrase(number) {
 		} else {
 			resultArray.push(i);
 		}
-		console.log('result array', resultArray);
-		console.log('result', outputResult);
 	}
+	console.log('result array', resultArray);
+
+	resultArray.forEach(function() {
+		$('#result').append(resultArray);
+	});
 }
 
 $(function() {
