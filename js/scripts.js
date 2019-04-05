@@ -6,7 +6,6 @@ function returnPhrase(number) {
 	for (i = 0; i <= number; i++) {
 		outputArray.push(i);
 	}
-	console.log(outputArray);
 
 	for (i = 0; i < outputArray.length; i++) {
 		if(i.toString().includes('3')) {
@@ -19,7 +18,6 @@ function returnPhrase(number) {
 			resultArray.push(i);
 		}
 	}
-	console.log('result array', resultArray);
 
 	for (i = 0; i < outputArray.length; i++) {
 		$('#result').append('<span>' + resultArray[i] + ', </span>');
