@@ -1,24 +1,24 @@
-// var beep = 'Beep!';
-// var boop = 'Boop!';
-// var dave = 'I\'m sorry Dave. I\'m afraid I can\'t do that.'; 
-
 function returnPhrase(number) {
 	var outputArray = [];
-	
+	var resultArray = [];
 	
 	for (var i = 0; i <= number; i++) {
-		var outputResult = '';
-		if (number.toString().includes(3)) {
-			outputArray.push(outputResult += 'I\'m sorry Dave. I\'m afraid I can\'t do that.');
-		} else if (number.toString().includes(2)) {
-			outputArray.push(outputResult += 'Boop!');
-		} else if (number.toString().includes(1)) {
-			outputArray.push(outputResult += 'Beep!');
-		// } else {
-		// 	outputArray.push(outputResult);
-		}
+		outputArray.push(i);
 	}
 	console.log(outputArray);
+
+	var outputResult = '';
+	if (number.toString().includes(3)) {
+		resultArray.push('I\'m sorry Dave. I\'m afraid I can\'t do that.');
+	} else if (number.toString().includes(2)) {
+		resultArray.push('Boop!');
+	} else if (number.toString().includes(1)) {
+		resultArray.push('Beep!');
+	} else {
+		resultArray.push(number);
+	}
+	console.log('result array', resultArray);
+	console.log('result', outputResult);
 }
 
 $(function() {
