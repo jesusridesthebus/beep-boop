@@ -1,6 +1,6 @@
-var beep = 'Beep!';
-var boop = 'Boop!';
-var dave = 'I\'m sorry Dave. I\'m afraid I can\'t do that.'; 
+// var beep = 'Beep!';
+// var boop = 'Boop!';
+// var dave = 'I\'m sorry Dave. I\'m afraid I can\'t do that.'; 
 
 function returnPhrase(number) {
 	var outputArray = [];
@@ -8,8 +8,14 @@ function returnPhrase(number) {
 	
 	for (var i = 0; i <= number; i++) {
 		var outputResult = '';
-		if (number.includes(1)) {
-			outputArray(outputResult += 'Beep!').push;
+		if (number.toString().includes(3)) {
+			outputArray.push(outputResult += 'I\'m sorry Dave. I\'m afraid I can\'t do that.');
+		} else if (number.toString().includes(2)) {
+			outputArray.push(outputResult += 'Boop!');
+		} else if (number.toString().includes(1)) {
+			outputArray.push(outputResult += 'Beep!');
+		// } else {
+		// 	outputArray.push(outputResult);
 		}
 	}
 	console.log(outputArray);
