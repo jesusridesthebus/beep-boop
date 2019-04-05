@@ -21,9 +21,9 @@ function returnPhrase(number) {
 	}
 	console.log('result array', resultArray);
 
-	resultArray.forEach(function() {
-		$('#result').append(resultArray);
-	});
+	for (i = 0; i < outputArray.length; i++) {
+		$('#result').append('<span>' + resultArray[i] + ', </span>');
+	};
 }
 
 $(function() {
@@ -33,9 +33,6 @@ $(function() {
 		var numberInput = parseInt($('input#beep-boop-input').val());
 		var result = returnPhrase(numberInput);
 		$('.beep-boop-result').text(result);
-		$('#result').show(result);
+		$('#result').show();
 	});
 });
-
-
-//outputArray.push('' + number) --changes to string ?
