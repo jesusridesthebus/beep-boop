@@ -29,6 +29,7 @@ $(function() {
 		event.preventDefault();
 		$('#result').hide();
 		var numberInput = parseInt($('input#beep-boop-input').val());
+		$('#result').empty();
 		var result = returnPhrase(numberInput);
 		$('.beep-boop-result').text(result);
 		$('#result').show();
