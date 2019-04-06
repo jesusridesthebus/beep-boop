@@ -1,5 +1,3 @@
-https://jesusridesthebus.github.io/beep-boop/
-
 # Beep Boop!
 
 #### Epicodus solo project 4/5/19
