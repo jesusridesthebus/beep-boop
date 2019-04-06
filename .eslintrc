@@ -21,8 +21,8 @@
       ],
       "no-console": "warn",
       "indent": [
-          "error",
-          4,
+          "error", 
+          "tab",
           {
               "SwitchCase": 1,
               "ignoreComments": true
