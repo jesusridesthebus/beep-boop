@@ -2,7 +2,7 @@ function returnPhrase(number) {
 	var resultArray = [];
 		
 	var i = 0;
-	for (i = 0; i <= number; i++) {
+	for(i = 0; i <= number; i++) {
 		if(i.toString().includes('3')) {
 			resultArray.push('I\'m sorry Dave. I\'m afraid I can\'t do that. ');
 		} else if(i.toString().includes('2')) {
