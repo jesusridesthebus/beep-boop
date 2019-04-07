@@ -1,3 +1,19 @@
+#beep-boop-input {
+  width: 300px;
+}
+
 #result {
   display: none;
+}
+
+body {
+  background-image: url("../img/hal.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.btn-dark {
+  background-color: rgb(238, 14, 14);
 }
